@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+body{
+    /* background: linear-gradient(
+		rgba(	138, 43, 226, 0.2),
+		rgba(	138, 43, 226, 0.2)
+	), */
+	background: url("./images/colorful-abstract-nebula-space-background.jpg");	
+	background-size: cover;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+}
+/* ========================================================================== */
+/* navbar */
+#navbar{
+    background-color: rgba(0, 0, 0, 0.112);
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 900;
+}
+
+#logo{
+    color: white;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#navtext{
+    color: rgba(255, 255, 255, 0.6);
+    position: relative;
+}
+#navtext::after{
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    border-bottom: 1px solid white;
+    width: 0;
+    left:0;
+    transition: .5s ;
+
+}
+#navtext:hover::after{
+    color: white;
+    bottom: 10px;
+    height: 3px;
+    width: 100%;
+    
+}
+
+
+#navtext:first-child{
+    color:white;
+}
+
+#buttonLanding{
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 50px;
+}
+#menu{
+    width: 4rem;
+}
+/* navbar end */
+
+/* ========================================================================== */
+/* landing */
+#landing{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title{
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+    font-weight: 900;
+    font-size: 3rem; 
+    transition: 1s;
+}
+#title:hover{
+    scale: 1.2;
+    text-shadow: 2px 2px 20px blueviolet;
+}
+#name{
+    color:white;
+    font-size: 2rem;
+    transition: 1s;
+}
+/* #name:hover{
+    scale: 1.2;
+   
+} */
+#developer{
+    color: blueviolet;
+}
+#buttonLanding{
+    font-family: 'Courier New', Courier, monospace;
+    transition: 1s;
+}
+#buttonLanding:hover{
+    border: 1px solid white;
+    background-color: transparent;
+    scale: 1.1;
+   
+}
+
+
+
+#socialIcons{
+    display: flex;
+    justify-content: center;
+}
+#socialIcons a{
+    text-decoration: none;
+    background-color: none;
+    margin: 10px;
+    transition: 0.5s;
+}
+#socialIcons a i{
+    font-size: 2em;
+    color: blueviolet;
+    opacity: 0.7;
+   
+}
+/* Hover affect on social media icon */
+#socialIcons a:hover{
+    scale: 1.2;
+    
+}
+#socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+/* landing  end */
+/* ========================================================================== */
+
+/* sidebar */
+#sidebar1{
+    background-color: rgb(0, 0, 0) !important;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    z-index: 999;
+}
+#sidebar0{
+    background-color: black;
+    backdrop-filter: blur(10px);
+    z-index: 900;
+}
+/* sidebar end */
+/* ========================================================================== */
+/* tools */
+#Tools{
+    
+    height: 100%;
+}
+#toolimg{
+    width: 120px;
+}
+
+#toolsTitle{
+    font-size: 3rem;
+    font-weight: 900;
+}
+#icons img{
+    
+    border: 1px solid white;
+    width: 15%;
+    background-color: gray;
+    transition: .5s;
+    display: flex;
+    
+    
+}
+
+#icons img:hover{
+    scale: 1.2;
+    z-index: 20;
+}
+#toolscont{
+    background-color:rgba(255, 255, 255, 0.089);
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px rgb(150, 89, 208);
+    padding: 10%;
+    margin: 0% 10% 10% 10%;
+}
+
+
+#html5{
+
+}
+
+/* tools end */
+/* ========================================================================== */
+/* contact */
+#formDiv{
+    color: white;
+}
+#submit{
+    background-color: blueviolet;
+    color:white;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px white;
+    transition: 1s;
+}
+#submit:hover{
+    /* border: 1px solid white inset; */
+    background-color: transparent;
+    scale: 1.1;
+}
+#contactTitle{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#ConName{
+    background-color: rgba(255, 255, 255, 0.203);
+    color: white !important;
+    backdrop-filter: blur(10px);
+    transition: .5s;
+    text-align: center;
+    margin-top: 10px;
+}
+#ConName:hover{
+    scale: 1.1;
+    box-shadow: 1px 1px 20px blueviolet;
+}
+
+#ConEmail{
+    background-color: rgba(255, 255, 255, 0.203);
+    color: white !important;
+    backdrop-filter: blur(10px);
+    transition: .5s;
+    text-align: center;
+    margin-top: 10px;
+}
+#ConEmail:hover{
+    scale: 1.1;
+    box-shadow: 1px 1px 20px blueviolet;
+}
+#ConMessage{
+    background-color: rgba(255, 255, 255, 0.203);
+    color: white !important;
+    backdrop-filter: blur(10px);
+    transition: .5s;
+    text-align: center;
+    margin-top: 10px;
+}
+#ConMessage:hover{
+    scale: 1.1;
+    box-shadow: 1px 1px 20px blueviolet;
+}
+
+/* contact end */
+/* ========================================================================== */
+/* about */
+#about{
+    height: 100%;
+}
+
+#img1{
+    width:400px;
+    transition: .5s;
+}
+#img1:hover{
+    opacity: .6;
+}
+
+
+#box h1{    
+    font-family: montserrat;
+    font-weight:600;
+    color: white;
+}
+#box p{
+    font-family: montserrat;
+    font-size: 18px;
+    color: white;
+}
+#aboutTitle{
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+}
+
+#containerAbout{
+    background-color: rgba(255, 255, 255, 0.088);
+    backdrop-filter: blur(10px);
+    padding: 10%;
+    gap:10px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 20px rgb(150, 89, 208);
+    
+}
+
+/* about end */
+/* ========================================================================== */
+/* project */
+#Works{
+    height: 100%;
+}
+#containerProj{
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 5px 2px 19px 5px blueviolet;
+    padding:10%;
+}
+#projCard{
+    width: 18rem;
+    transition: 1s;
+    background-color:rgba(255, 255, 255, 0.141);
+    backdrop-filter: blur(30px);
+    transition: 1s;
+}
+#projCard:hover{
+    scale: 1.1;
+    box-shadow: 0px 0px 20px 1px blueviolet;
+    z-index: 100;
+    width: 18rem;     
+}
+
+#workTitle{
+    font-size: 3rem;
+    font-weight: 900;
+}
+#cardbody{
+    background-color: rgb(0, 0, 0);
+}
+
+#visit{
+    background-color:blueviolet;
+    border: none;
+    padding: 10px 50px 10px 50px;
+    border-radius: 50px;
+    transition: .5s;
+}
+#visit:hover{
+    background-color:transparent;
+    border: 1px solid white;  
+}
+/* project end */
+
+/* footer */
+#footer1{
+   background-color: rgba(250, 235, 215, 0.147);
+   backdrop-filter: blur(10px);
+}
+/* footer end */
+
+/* modal */
+#modal{
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.246);
+    box-shadow: 2px 2px 10px blueviolet;
+}
